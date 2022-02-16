@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import twitterLogo from './assets/twitter-logo.svg';
 import './App.css';
 import { Connection, PublicKey, clusterApiUrl } from '@solana/web3.js';
 import { Program, Provider, web3 } from '@project-serum/anchor';
@@ -26,8 +25,6 @@ const opts = {
 }
 
 // Constants
-const TWITTER_HANDLE = '_buildspace';
-const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 const TEST_GIFS = [
   'https://i.giphy.com/media/eIG0HfouRQJQr1wBzz/giphy.webp',
