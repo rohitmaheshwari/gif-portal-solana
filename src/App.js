@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import twitterLogo from './assets/twitter-logo.svg';
 import { Connection, PublicKey, clusterApiUrl } from '@solana/web3.js';
 import { Program, Provider, web3 } from '@project-serum/anchor';
 import idl from './idl.json';
@@ -25,6 +26,8 @@ const opts = {
 }
 
 // Constants
+const TWITTER_HANDLE = 'itzzz_rohit';
+const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 const TEST_GIFS = [
   'https://i.giphy.com/media/eIG0HfouRQJQr1wBzz/giphy.webp',
@@ -229,7 +232,7 @@ const App = () => {
             href={TWITTER_LINK}
             target="_blank"
             rel="noreferrer"
-          >{`built on @${TWITTER_HANDLE}`}</a>
+          >{`built by @${TWITTER_HANDLE}`}</a>
         </div>
       </div>
     </div>
